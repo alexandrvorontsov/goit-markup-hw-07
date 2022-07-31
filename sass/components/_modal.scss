@@ -48,6 +48,10 @@
 	transition-property: border;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus .close__icon {
+		fill: var(--accent-color);
+	}
 }
 
 .modal__text {
@@ -60,13 +64,6 @@
 	color: var(--main-font-color);
 	width: 448px;
 	margin-bottom: 12px;
-}
-
-.modal-close__btn:hover .close__icon {
-	fill: var(--accent-color);
-}
-.modal-close__btn:focus .close__icon {
-	fill: var(--accent-color);
 }
 
 .modal__field {
@@ -104,31 +101,32 @@
 	transition-property: border;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+	&:hover,
+	&:focus {
+		border: 1px solid #2196f3;
+	}
+	&:hover + .form__icon,
+	&:focus + .form__icon {
+		fill: var(--accent-color);
+	}
+	&:focus {
+		border-color: var(--accent-color);
+	}
 
-.modal__input:hover,
-.modal__input:focus {
-	border: 1px solid #2196f3;
-}
+	&::placeholder {
+		font-size: 16px;
+		color: #afb1b8;
+	}
 
-.modal__input:hover + .form__icon,
-.modal__input:focus + .form__icon {
-	fill: var(--accent-color);
-}
-.modal__input:focus {
-	border-color: var(--accent-color);
-}
-
-.modal__input::placeholder {
-	font-size: 16px;
-	color: #afb1b8;
-}
-
-.modal__input:not(:focus):not(:placeholder-shown):valid {
-	background-color: rgba(0, 255, 0, 0.1);
-}
-.modal__input:not(:focus):not(:placeholder-shown):invalid {
-	background-color: rgba(255, 0, 0, 0.1);
+	&:not(:focus):not(:placeholder-shown):valid {
+		background-color: rgba(0, 255, 0, 0.1);
+	}
+	&:not(:focus):not(:placeholder-shown):invalid {
+		background-color: rgba(255, 0, 0, 0.1);
+	}
+	&:focus + .form__icon {
+		fill: var(--accent-color);
+	}
 }
 
 .form__icon {
@@ -163,6 +161,10 @@
 	transition-property: border;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+		border-color: var(--accent-color);
+	}
 }
 
 .check__text {
@@ -177,11 +179,6 @@
 	color: var(--secondary-font-color);
 	margin-bottom: 30px;
 	/* border-color: #2196f3; */
-}
-
-.input__textarea:hover,
-.input__textarea:focus {
-	border-color: var(--accent-color);
 }
 
 .check-icon {
@@ -203,10 +200,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.modal__input:focus + .form__icon {
-	fill: var(--accent-color);
 }
 
 .check__input:checked + .check__text span {
@@ -260,9 +253,8 @@
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-submit__btn:hover,
-.modal-submit__btn:focus {
-	background-color: #00ccff;
+	&:hover,
+	&:focus {
+		background-color: #00ccff;
+	}
 }

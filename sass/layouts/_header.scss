@@ -112,6 +112,10 @@ a.link__studio::after {
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover .icon-envelope-smartphone,
+	&:focus .icon-envelope-smartphone {
+		fill: var(--accent-color);
+	}
 }
 
 .contact-list .header-mail + .header-tel {
@@ -124,9 +128,4 @@ a.link__studio::after {
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contact:hover .icon-envelope-smartphone,
-.header-contact:focus .icon-envelope-smartphone {
-	fill: var(--accent-color);
 }

@@ -1,4 +1,6 @@
 /* Logo */
+
+// header logo
 .logo__web {
 	font-family: 'Raleway';
 	font-style: normal;
@@ -15,4 +17,24 @@
 }
 .web__color {
 	color: var(--accent-color);
+}
+
+// footer logo
+
+.web__logo {
+	color: var(--main-light-color);
+	text-decoration: none;
+}
+
+.footer__web {
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--main-light-color);
+}
+
+.web__logo {
+	display: inline-block;
+	margin-bottom: 20px;
 }
