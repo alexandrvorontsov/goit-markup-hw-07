@@ -1,0 +1,132 @@
+/* Header */
+
+.header__block {
+	border-bottom: 1px solid #ececec;
+}
+
+.contact-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.link__studio,
+.link__portfolio,
+.link__contact,
+.link__studio-secondary,
+.link__portfolio-secondary,
+.link__contact-secondary,
+.header-contact {
+	padding: 32px 0;
+}
+
+/* Menu Nav */
+
+.nav__block,
+.nav__list,
+.contact-list {
+	display: flex;
+	align-items: center;
+}
+
+.contact-list {
+	margin-left: auto;
+}
+
+.nav__link:not(:last-child) {
+	margin-right: 50px;
+}
+
+.header__conteiner {
+	display: flex;
+	align-items: center;
+}
+
+.link__studio {
+	font-weight: 500;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	display: block;
+	color: var(--accent-color);
+	position: relative;
+}
+
+.link__portfolio,
+.link__contact {
+	font-weight: 500;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	display: block;
+	color: var(--main-font-color);
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link__studio:hover,
+.link__studio:focus,
+.link__portfolio:hover,
+.link__portfolio:focus,
+.link__contact:hover,
+.link__contact:focus,
+.header-contact:hover,
+.header-contact:focus,
+.footer__contact:hover,
+.footer__contact:focus,
+.link__studio-secondary:hover,
+.link__studio-secondary:focus,
+.link__portfolio-secondary:hover,
+.link__portfolio-secondary:focus,
+.link__contact-secondary:hover,
+.link__contact-secondary:focus {
+	color: var(--accent-color);
+}
+
+a.link__studio::after {
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 4px;
+	background-color: var(--accent-color);
+	border-radius: 2px;
+}
+
+/* Contact email and tel */
+.header-contact {
+	font-weight: 500;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	align-items: center;
+	color: var(--secondary-font-color);
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-list .header-mail + .header-tel {
+	margin-left: 50px;
+}
+
+.icon-envelope-smartphone {
+	margin-right: 10px;
+	fill: var(--secondary-font-colo);
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact:hover .icon-envelope-smartphone,
+.header-contact:focus .icon-envelope-smartphone {
+	fill: var(--accent-color);
+}

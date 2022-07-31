@@ -1,0 +1,33 @@
+.section-group,
+.section-teams,
+.section-portflio,
+.section-clients {
+	padding-bottom: 94px;
+	padding-top: 94px;
+}
+
+.section__title {
+	padding: 200px 0px 200px 0px;
+	text-align: center;
+	/* background-color: #2f303a; */
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/img-hero.jpg);
+	text-align: center;
+	padding: 200px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section-header {
+	background-color: var(--main-light-color);
+}
+
+.section-group {
+	background-color: var(--main-light-color);
+}
